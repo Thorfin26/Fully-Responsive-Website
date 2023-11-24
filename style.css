@@ -28,8 +28,13 @@
 
 }
 
+#navbar{
+  position: relative;
+}
+
 #navbar ul{
     display: flex;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* list styling */
@@ -63,4 +68,88 @@
     /* display: block;
     padding: 3px 22px;
     border-radius: 20px;   */
+}
+
+/* home section./ */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('image/bg1.jpg') no-repeat center center/cover;
+    height: 642px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+
+#home h1{
+    color: white;
+    text-align: center;
+    /* background-color: aliceblue;/ */
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    /* background-color: aliceblue; */
+}
+
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services.box{
+    border: 2px solid brown;
+}
+#services.box img{
+    /* border: 2px solid brown; */
+    height: 156px;
+}
+#services{}
+
+
+
+/* utility classes  */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid aliceblue;
+    background-color: red;
+    color: aliceblue;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    /* text-decoration: none; */
+}
+
+.btn:hover{
+    color:red;
+    background-color: aliceblue;
+}
+
+.h-primary center{
+    text-align: center;
 }
